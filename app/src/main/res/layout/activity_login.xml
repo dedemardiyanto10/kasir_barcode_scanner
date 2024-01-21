@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     tools:context=".LoginActivity">
+
+   <androidx.appcompat.widget.Toolbar
+         android:layout_height="?attr/actionBarSize"
+         android:layout_width="match_parent"
+         android:background="@color/colorPrimary"
+         app:titleTextColor="@android:color/white"
+         app:title="Kasir"
+         android:id="@+id/toolbar" />
+
+    <ScrollView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="10dp"
+             android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 app:endIconMode="clear_text"
+                 app:boxCornerRadiusTopEnd="8dp"
+                 android:hint="Email"
+                 android:padding="5dp"
+                 app:boxCornerRadiusBottomStart="8dp"
+                 app:boxStrokeWidthFocused="1.5dp"
+                 app:boxCornerRadiusBottomEnd="8dp"
+                 app:startIconDrawable="@drawable/email24"
+                 app:boxCornerRadiusTopStart="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:singleLine="true"
+                     android:inputType="textEmailAddress"
+                     android:id="@+id/editTextEmail" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 app:boxCornerRadiusTopEnd="8dp"
+                 app:endIconMode="password_toggle"
+                 android:hint="Kata sandi"
+                 android:padding="5dp"
+                 app:boxCornerRadiusBottomStart="8dp"
+                 app:boxStrokeWidthFocused="1.5dp"
+                 app:boxCornerRadiusBottomEnd="8dp"
+                 app:startIconDrawable="@drawable/password24"
+                 app:boxCornerRadiusTopStart="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:singleLine="true"
+                     android:inputType="textPassword"
+                     android:id="@+id/editTextPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="5dp"
+                 android:orientation="horizontal">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:text="Lupa Kata Sandi? " />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:textColor="?@attr/colorPrimary"
+                     android:id="@+id/txtReset"
+                     android:text="Reset!"
+                     android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <Button
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_margin="5dp"
+                 style="@style/Widget.Material3.Button"
+                 android:id="@+id/buttonLogin"
+                 android:textColor="@android:color/white"
+                 android:text="MASUK"
+                 android:textStyle="bold" />
+
+            <ProgressBar
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:visibility="gone"
+                 android:indeterminateTint="?@attr/colorPrimary"
+                 android:layout_gravity="center"
+                 android:id="@+id/login_progress_bar" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="5dp"
+                 android:orientation="horizontal"
+                 android:layout_gravity="center">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:text="Belum memiliki akun? " />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:textColor="?@attr/colorPrimary"
+                     android:id="@+id/txtRegister"
+                     android:text="Daftar sekarang!"
+                     android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

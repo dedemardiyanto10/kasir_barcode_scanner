@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "869383303083",
+    "firebase_url": "https://kasir-f4910-default-rtdb.firebaseio.com",
+    "project_id": "kasir-f4910",
+    "storage_bucket": "kasir-f4910.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869383303083:android:e2e52e622a70922193acee",
+        "android_client_info": {
+          "package_name": "com.kasir.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgnegCMtAWxq81LxQ8onuYUM561KfryTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

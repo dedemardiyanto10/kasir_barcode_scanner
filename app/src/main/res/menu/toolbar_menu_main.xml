@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addProduct"
+        android:icon="@drawable/plus"
+        android:title="Tambah Product"
+        app:iconTint="@android:color/white"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/moreMenu"
+        android:icon="@drawable/more"
+        android:title="More Menu"
+        app:iconTint="@android:color/white"
+        app:showAsAction="always">
+
+        <menu>
+           <item
+                android:id="@+id/setting"
+                android:icon="@drawable/setting"
+                android:title="Pengaturan" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Keluar" />
+        </menu>
+
+    </item>
+
+</menu>

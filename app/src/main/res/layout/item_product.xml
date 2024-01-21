@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:cardElevation="0dp"
+        android:id="@+id/cardViewOptions"
+        style="?attr/materialCardViewOutlinedStyle"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="10sp"
+                    android:text="Nama produk" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:id="@+id/productNameTextView"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="50dp" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/barcode"
+                        android:paddingRight="5dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/productBarcodeTextView" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="?@attr/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_gravity="right"
+                    android:id="@+id/productPriceTextView" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

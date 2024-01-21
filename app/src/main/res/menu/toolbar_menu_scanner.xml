@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_flash"
+        android:icon="@drawable/flash_off"
+        android:title="Flash"
+        app:showAsAction="always"
+        app:iconTint="@android:color/white" /> 
+
+    <item
+        android:id="@+id/action_focus"
+        android:icon="@drawable/focus_on"
+        android:title="Focus"
+        app:showAsAction="always"
+        app:iconTint="@android:color/white" />
+
+    <item
+        android:id="@+id/action_format"
+        android:icon="@drawable/format"
+        android:title="Format"
+        app:showAsAction="always"
+        app:iconTint="@android:color/white" />
+
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@drawable/camera"
+        android:title="Switch Camera"
+        app:showAsAction="always"
+        app:iconTint="@android:color/white" />
+
+</menu>

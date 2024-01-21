@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+         android:layout_height="?attr/actionBarSize"
+         android:layout_width="match_parent"
+         android:background="@color/colorPrimary"
+         app:title="Kasir"
+         app:titleTextColor="@android:color/white"
+         android:id="@+id/toolbar" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:paddingRight="5dp"
+         android:paddingLeft="5dp" >
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="5dp"
+             app:boxCornerRadiusBottomEnd="8dp"
+             app:boxCornerRadiusTopStart="8dp"
+             app:endIconMode="custom"
+             app:boxCornerRadiusTopEnd="8dp"
+             android:hint="Cari Nama Produk/Barcode"
+             app:boxCornerRadiusBottomStart="8dp"
+             app:boxStrokeWidthFocused="1.5dp"
+             app:endIconDrawable="@drawable/barcode"
+             app:startIconDrawable="@drawable/search"
+             app:boxBackgroundMode="outline"
+             android:id="@+id/textInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:singleLine="true"
+                 android:inputType="text"
+                 android:id="@+id/result" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:layout_below="@+id/toolbar"
+         android:padding="5dp"
+         android:id="@+id/swipeRefreshLayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:nestedScrollingEnabled="true"
+             android:id="@+id/recyclerViewChart"
+             android:overScrollMode="never" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

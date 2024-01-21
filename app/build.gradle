@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    
+}
+
+android {
+    namespace 'com.kasir.app'
+    compileSdk 34
+    
+    defaultConfig {
+        applicationId "com.kasir.app"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        
+        vectorDrawables { 
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+        
+    }
+    
+}
+
+dependencies {
+    implementation platform("com.google.firebase:firebase-bom:32.5.0")
+    implementation "com.google.firebase:firebase-auth"
+    implementation "com.google.firebase:firebase-analytics"
+    implementation "com.google.firebase:firebase-firestore"
+    implementation "com.google.firebase:firebase-storage"
+    implementation "com.google.firebase:firebase-database"
+    implementation "com.google.android.gms:play-services-auth:20.7.0"
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+}

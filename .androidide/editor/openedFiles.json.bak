@@ -1,0 +1,35 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Kasir/app/src/main/java/com/kasir/app/DataProductActivity.java",
+      "selection": {
+        "end": {
+          "column": 61,
+          "index": 4986,
+          "line": 133
+        },
+        "start": {
+          "column": 61,
+          "index": 4986,
+          "line": 133
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Kasir/app/src/main/res/layout/activity_add_product.xml",
+      "selection": {
+        "end": {
+          "column": 8,
+          "index": 1207,
+          "line": 33
+        },
+        "start": {
+          "column": 8,
+          "index": 1207,
+          "line": 33
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Kasir/app/src/main/res/layout/activity_add_product.xml"
+}

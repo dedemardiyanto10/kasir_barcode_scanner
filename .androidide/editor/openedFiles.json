@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Kasir/app/src/main/res/menu/toolbar_menu_main.xml",
+      "selection": {
+        "end": {
+          "column": 7,
+          "index": 881,
+          "line": 30
+        },
+        "start": {
+          "column": 7,
+          "index": 881,
+          "line": 30
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Kasir/app/src/main/res/menu/toolbar_menu_main.xml"
+}
